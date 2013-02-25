@@ -1,0 +1,26 @@
+{
+  "name": "deck.md",
+  "version": "0.0.1",
+  "author": "Matthew Chase Whittemore <mcwhittemore@gmail.com>",
+  "description": "Single Markdown file to single Deck.js file",
+  "contributors": [
+    {
+      "name": "Matthew Chase Whittemore",
+      "email": "mcwhittemore@gmail.com"
+    } 
+  ],
+  "keywords": [
+  ],
+  "main": "./lib/deckmd",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "express": "3.1.0",
+    "ejs": "0.8.3",
+    "jade": "0.27.6",
+    "markdown": "0.4.0"
+  },
+  "license": "MIT"
+}
