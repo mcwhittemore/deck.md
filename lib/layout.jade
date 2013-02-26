@@ -16,28 +16,20 @@ html.no-js(lang='en')
     meta(name='description', content='')
     meta(name='viewport', content='width=1024, user-scalable=no')
 
-    // Required stylesheets
-    link(rel="stylesheet", href="deck.js/core/deck.core.css")
+    // DECK CORE CSS
+    - for(var i=0; i<locals.coreCSS.length; i++){
+      style!= locals.coreCSSFiles[locals.coreCSS[i]]
+    - }
 
-    // Starter kit custom styles.
-    link(rel="stylesheet", href="deck.js/css/slides.custom.css")
-
-    // Extension CSS files go here. Remove or add as needed.
-    link(rel="stylesheet", href="deck.js/extensions/goto/deck.goto.css")
-    link(rel="stylesheet", href="deck.js/extensions/menu/deck.menu.css")
-    link(rel="stylesheet", href="deck.js/extensions/navigation/deck.navigation.css")
-    link(rel="stylesheet", href="deck.js/extensions/status/deck.status.css")
-    link(rel="stylesheet", href="deck.js/extensions/hash/deck.hash.css")
-    link(rel="stylesheet", href="deck.js/extensions/scale/deck.scale.css")
-
-    // Style theme. More available in /themes/style/ or create your own.
-    //link(rel="stylesheet", href="deck.js/themes/style/swiss.css")
-
-    // Transition. More available in /themes/transition/ or create your own.
-    link(rel="stylesheet", href="deck.js/themes/transition/horizontal-slide.css")
+    //add in custom styles from config.css
+    - for(var i=0; i<locals.css.length; i++){
+      style!= locals.cssFiles[locals.css[i]]
+    - }
 
     // Modernizr.
-    script(src="deck.js/modernizr.custom.js")
+    - for(var i=0; i<locals.modernizrJS.length; i++){
+      script!= locals.modernizrJSFiles[locals.modernizrJS[i]]
+    - }
 
   body
 
@@ -73,17 +65,22 @@ html.no-js(lang='en')
     //- -----------------------------------------------------------------------
     //- JavaScript
     //- -----------------------------------------------------------------------
-    // Required JS files.
-    script(src="deck.js/jquery-1.8.2.min.js")
-    script(src="deck.js/core/deck.core.js")
+    
+    // JQUERY
+    - for(var i=0; i<locals.jqueryJS.length; i++){
+      script!= locals.jqueryJSFiles[locals.jqueryJS[i]]
+    - }
 
-    // Extension JS files. Add or remove as needed.
-    script(src="deck.js/extensions/hash/deck.hash.js")
-    script(src="deck.js/extensions/menu/deck.menu.js")
-    script(src="deck.js/extensions/goto/deck.goto.js")
-    script(src="deck.js/extensions/status/deck.status.js")
-    script(src="deck.js/extensions/navigation/deck.navigation.js")
-    script(src="deck.js/extensions/scale/deck.scale.js")
+    // DECK CORE JS
+    - for(var i=0; i<locals.coreJS.length; i++){
+      script!= locals.coreJSFiles[locals.coreJS[i]]
+    - }
+
+    // Add in JS files from config.js
+    - for(var i=0; i<locals.js.length; i++){
+      script!= locals.jsFiles[locals.js[i]]
+    - }
+    
 
     // Initialize the deck.
     script
