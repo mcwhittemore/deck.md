@@ -23,7 +23,9 @@ Is this a sign that we are less materialistic?
 
 ## Third Slide
 
-After this slide you should see yet another title page
+![Filed Image](images/Punched_pockets.jpg)
+
+![Online Image](http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Internet1.jpg/298px-Internet1.jpg)
 
 # Title witout subtitle
 
