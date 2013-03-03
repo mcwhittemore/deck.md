@@ -1,7 +1,7 @@
 var deckmd = require("../lib/deckmd");
 var fs = require('fs');
 
-var md_file = "demo.md";
+var md_file = ["demo.md", "demo.md"];
 
 var uc = {
 	unique_id: "demo",
