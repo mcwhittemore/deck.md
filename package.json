@@ -1,6 +1,6 @@
 {
   "name": "deck.md",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Matthew Chase Whittemore <mcwhittemore@gmail.com>",
   "description": "Single Markdown file to single Deck.js file",
   "contributors": [

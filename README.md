@@ -81,7 +81,6 @@ Attempts to generate the html, css, javascript and data-uris needed to render th
 * Update config
 	* add destination path and destination name
 	* remove unique_id
-* Create sub-modules for the markdown to jade conversion functions
 * Add in attribution code
 
 ### 0.2.0
