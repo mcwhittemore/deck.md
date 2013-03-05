@@ -76,17 +76,17 @@ Attempts to generate the html, css, javascript and data-uris needed to render th
 
 ## Next Steps
 
-### 0.0.1
+### 0.1.0
 
 * Update config
 	* add destination path and destination name
 	* remove unique_id
-* Update loadFiles to return a value, not just simply set something in the config.
+* --Update loadFiles to return a value, not just simply set something in the config.--
 * Create sub-modules for the markdown to jade conversion functions
 * Create sub-modules for the text modification functions
 * Add in attribution code
 
-### 0.0.2
+### 0.2.0
 
 * Simplify the addition of custom styles
 * Simplify the addition of deck.js extensions
