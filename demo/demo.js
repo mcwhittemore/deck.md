@@ -11,7 +11,9 @@ var content = {
 }
 
 var customConfig = {
-	unique_id: "demo",
+	destination: {
+		allStub: "demo"
+	},
 	saveJade: true
 }
 
@@ -19,5 +21,5 @@ deckmd.renderFile(content, customConfig, function(err, html, config){
 	if(err)
 		console.log(err);
 	else
-		fs.writeFile(config.unique_id+".html", html, "utf8");
+		fs.writeFile(config.destination.html, html, "utf8");
 });

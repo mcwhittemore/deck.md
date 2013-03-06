@@ -78,9 +78,6 @@ Attempts to generate the html, css, javascript and data-uris needed to render th
 
 ### 0.1.0
 
-* Update config
-	* add destination path and destination name
-	* remove unique_id
 * Add in attribution code
 
 ### 0.2.0
