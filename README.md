@@ -82,6 +82,7 @@ Attempts to generate the html, css, javascript and data-uris needed to render th
 
 ### 0.2.0
 
+* Rework css and js config includes.
 * Simplify the addition of custom styles
 * Simplify the addition of deck.js extensions
 * Add deck.js version selection options
